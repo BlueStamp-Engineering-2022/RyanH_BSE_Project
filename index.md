@@ -33,7 +33,7 @@ The TV-B-Gone uses 4 LEDs (located at the front of the device) to emit IR pulses
 The main challenge I faced was soldering. Prior to the first day of BSE, I had no experience in soldering. Unsurprisingly, when I initially started, I was progressing at a very slow/inefficient pace, and my soldering work was, to say the least, rough. However, as I progressed, I got better at soldering, and towards the end, I was able to solder at a pretty efficient pace. 
 
 
-[![Starter Project](https://drive.google.com/file/d/1zsiB3DxoWJgnY65gyYpnrO-yHLUVEFNz/view?usp=sharing)](https://www.youtube.com/watch?v=NJntLOVBBz4 "Starter Project"){:target="_blank" rel="noopener"}
+[![Ryan H Starter Project](https://res.cloudinary.com/marcomontalbano/image/upload/v1655500204/video_to_markdown/images/youtube--NJntLOVBBz4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=NJntLOVBBz4 "Ryan H Starter Project")
 
 
 
