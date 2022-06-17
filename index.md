@@ -26,7 +26,7 @@ My first milestone was setting up and hooking up the Raspberry Pi and all the ne
 # Starter Project: TV-B-Gone 
 
 
-My starter project was the TV-B-Gone, which, upon pressing the button located at the bottom left of the circuit board, will turn off most TVs of American/Asian origin. 
+My starter project was the TV-B-Gone, which, upon pressing a button located at the bottom left of the circuit board, will turn off most TVs of American/Asian origin. 
 
 The TV-B-Gone uses 4 LEDs (located at the front of the device) to emit IR pulses and send an IR code to the targeted TV. IR pulses travel at a frequency of 38 KHz, and this is the type of frequency my targeted TV recognizes. If the TV recognizes the IR code, it will turn off. The TV-B-Gone is battery operated, and all its components are soldered onto a PCB. A PCB is known as a printed circuit board and has both conductive and insulating layers. The PCB has two wires that extend from a battery holder soldered into the bottom of the PCB. The batteries supply the power for the device, and the wires allow for the electrical current to reach the PCB. From there, when the button is pressed, a green LED indicator will blink to signal that IR pulses are emitting. The LED indicator light is controlled by the microcontroller, which was inserted into an 8-pin socket. Using resistors, capacitors, oscillators (which produce an oscillating electronic signal), and transistors (a device used to switch or amplify electrical signals), the 4 LEDs at the front of the device are then prompted to emit the IR pulses. 
 
