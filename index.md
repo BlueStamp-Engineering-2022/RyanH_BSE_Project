@@ -5,7 +5,7 @@ Hi, my name is Ryan, and I am a rising senior at Monta Vista High School.
 |:--:|:--:|:--:|:--:|
 | Ryan | Monta Vista High School | Mechanical Engineering | Incoming Senior
 
-![Headstone Image](https://photos.google.com/share/AF1QipPfXXrUy84d3RworMUQWytms_AhB1PhceeMV76HeIOtnnEISkmCd99oGmAbPtCnKQ/photo/AF1QipOXy9R6oILSINKFfoF17SCu_oVSBDyqiYAFQZvU?key=blBtb2RCb01sX1hWc04xS3NMREJ0d3FUOWY2eWxB)
+![Headstone Image] (https://lh3.googleusercontent.com/pw/AM-JKLVd_RKZXDbv-9g-FS4-osAxcADfkAJQNDwSvj-4HLe3SLbJkhEs4QIhtkNCkso6Rn3e1cpVuookS0rVkaK18u0loLw12V1pWRHJRzcbV0mqgZxWiuNL220krBZol0HZ02rpaTCKz8qWuoyVamOBqag=s950-no?authuser=0)
   
 # Final Milestone
 My final milestone is the increased reliability and accuracy of my robot. I ameliorated the sagging and fixed the reliability of the finger. As discussed in my second milestone, the arm sags because of weight. I put in a block of wood at the base to hold up the upper arm; this has reverberating positive effects throughout the arm. I also realized that the forearm was getting disconnected from the elbow servo’s horn because of the weight stress on the joint. Now, I make sure to constantly tighten the screws at that joint. 
