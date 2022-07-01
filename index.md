@@ -26,7 +26,7 @@ The circuit that I have completed include a battery pack, a breadboard, an Ardui
 The biggest challenge that I faced was pairing the PS2 controller with the wireless adapter. Unfortunately, the wireless adapter was not compatible with the wires that I had to my disposal. As a result, I had to remove the casing that surrounded the adapter and directly solder each wire into their correct positions on the circuit board. This took quite a while to complete. After that, I tried coding for the Arduino so that the motors would move following inputs from the PS2 controller. However, although the code I wrote compiled successfully, the PS2 controller inputs had no effect on the motors. Luckily, the issue was not in the code I had written, but rather the library (PS2x_lib) I had installed. To solve the problem, all I had to do was install a different library for the Arduino, and that allowed for the motors to respond to the PS2 controller inputs. 
 
 
-[![First Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612574117/video_to_markdown/images/youtube--CaCazFBhYKs-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=CaCazFBhYKs "First Milestone"){:target="_blank" rel="noopener"}
+[![Milestone #1 Video](https://res.cloudinary.com/marcomontalbano/image/upload/v1656710570/video_to_markdown/images/youtube--j4AGbipcVsw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=j4AGbipcVsw "Milestone #1 Video")
 
 # Starter Project: TV-B-Gone 
 
