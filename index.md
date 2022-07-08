@@ -15,15 +15,15 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 # Second Milestone
 The date today is July 7th, 2022. It has been a little bit over 2 weeks since my last milestone and I have accomplished a lot since then. Here’s a brief rundown of what I currently have: 
 
-    1.) I have finished most of the mechanical construction of the robot. All motors, wheels, and metal reinforcements have been mounted and secured. The only thing       left is the wooden tray which will be placed above the bottom plate. 
+  1.) I have finished most of the mechanical construction of the robot. All motors, wheels, and metal reinforcements have been mounted and secured. The only thing       left is the wooden tray which will be placed above the bottom plate. 
   
-    2.) I have laid out all the electrical components onto the robot. The configuration of the electrical components will remain mostly the same from here on out.
+  2.) I have laid out all the electrical components onto the robot. The configuration of the electrical components will remain mostly the same from here on out.
  
-    3.) The code is currently complete for the PS2 controller. Both joysticks and all keypad buttons are operational and dictate how the omni-bot moves. 
+  3.) The code is currently complete for the PS2 controller. Both joysticks and all keypad buttons are operational and dictate how the omni-bot moves. 
  
-    4.) Jittering issues, random deviations, and unwanted rotations have been fixed. The robot can now move in all directions with relatively low rotation. 
+  4.) Jittering issues, random deviations, and unwanted rotations have been fixed. The robot can now move in all directions with relatively low rotation. 
   
-    5.) An on/off switch has been added to the omni-bot.
+  5.) An on/off switch has been added to the omni-bot.
 
 [![Second Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612574014/video_to_markdown/images/youtube--y3VAmNlER5Y-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=y3VAmNlER5Y&feature=emb_logo "Second Milestone"){:target="_blank" rel="noopener"}
 
