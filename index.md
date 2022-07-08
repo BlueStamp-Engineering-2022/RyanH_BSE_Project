@@ -15,7 +15,8 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 # Second Milestone
 The date today is July 7th, 2022. It has been a little bit over 2 weeks since my last milestone and I have accomplished a lot since then. Here’s a brief rundown of what I currently have: 
 
-    1.) I have finished most of the mechanical construction of the robot. All motors, wheels, and metal reinforcements have been mounted and secured. The only thing       left is the wooden tray which will be placed above the bottom plate. 
+    1.) I have finished most of the mechanical construction of the robot. All motors, wheels, and metal reinforcements have been mounted and secured. The only thing       
+    left is the wooden tray which will be placed above the bottom plate. 
   
     2.) I have laid out all the electrical components onto the robot. The configuration of the electrical components will remain mostly the same from here on out.
  
