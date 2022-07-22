@@ -1,5 +1,5 @@
 ﻿# Omni-Directional Robot
-Hi, my name is Ryan, and I am a rising senior at Monta Vista High School.
+Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The project I decided to pick is the Omni-Directional Robot. This robot can essentially go in any direction. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
