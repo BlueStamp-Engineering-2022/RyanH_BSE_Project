@@ -29,7 +29,7 @@ The date today is July 7th, 2022. It has been a little bit over 2 weeks since my
     4.) Jittering issues, random deviations, and unwanted rotations have been fixed. The robot can now move in all directions with relatively low rotation. 
   
     5.) An on/off switch has been added to the omni-bot.
-
+    
 [![Milestone 2](https://res.cloudinary.com/marcomontalbano/image/upload/v1658528884/video_to_markdown/images/youtube--AEiCQfl9qKQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=AEiCQfl9qKQ "Milestone 2")
 
 # First Milestone
