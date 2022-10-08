@@ -55,11 +55,4 @@ The main challenge I faced was soldering. Prior to the first day of BSE, I had n
 
 [![Ryan H Starter Project](https://res.cloudinary.com/marcomontalbano/image/upload/v1655500204/video_to_markdown/images/youtube--NJntLOVBBz4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=NJntLOVBBz4 "Ryan H Starter Project")
 
-# Build settings
-markdown: kramdown
-theme: minima
-
-
-
-
 
