@@ -6,12 +6,14 @@ Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The pr
 | Ryan | Monta Vista High School | Mechanical Engineering | Incoming Senior
 
 # Say Hello to Robbie!
-** Take important note of the pirate flag made of spaghetti noodle. It really adds to Robbie's character!
+** I added a tray along with a rubber band barrier so objects don't fall off the tray while the robot is moving. **
 
 # Final Milestone
 For my final milestone, I decided to add voice control. Initially, the idea was to accomplish this over the internet using the Node MCU ESP8266. However, after re-wiring all the electrical components, and compiling the code I had on the Arduino IDE, I received a fatal error saying “avr/io.h file not found”. Upon further research, I soon learned that the ESP8266 did not contain an AVR microcontroller like the Arduino UNO, which was required for the PS2 library I had downloaded. Therefore, I had two choices. I could either rewrite my code for the PS2 controller to work with the particle photon, or I could find an alternative way to achieve voice control. Seeing that rewriting my code could take too long, I decided to do more research on Bluetooth control with an Arduino. It didn’t take long before I found a very helpful website that introduced the Bluetooth module HC-06, which could be connected to the Arduino for Bluetooth capabilities. I ended up asking the instructors to see if we had any in stock, and we did! I immediately connected the HC-06 to the Arduino and began coding for Bluetooth control. 
 
 To do this, I first created an app through MIT app inventor. Using its built-in Bluetooth component, I was able to connect my phone to the HC-06 through the app. From there, I used block code to take in vocal commands from the user and made sure that only valid commands were accepted. If an invalid command was said, the app will tell the user to “provide a valid command”. To assist the user, I also added a page within the app that consisted of all the basic commands. Therefore, they could access these commands at any time if they were unsure about what the valid commands were. 
+
+**SCREENSHOTS OF THE APP**
 
 In order to have the omni-bot respond to the vocal commands, I had the app send a character, based on the command provided, to the HC-06. After that, the HC-06 would then send this information to the Arduino, which held the code I had written. Within the code, I had booleans for each direction (forward, backwards, left, right, turn right, turn left, and stop). When a certain character is received, using if-else statements, I was able to set the corresponding boolean to true. Then, based on that decision, the motors would move accordingly. After testing the voice control, I realized it was hard to stop the robot in a short amount of time. This caused a lot of problems as it made it nearly impossible to evade obstacles in time. To fix this, I added a “stop” button to the app. This allowed for quick stops when necessary. In addition, to those modifications, I also decided to take away control from the PS2 controller while the HC-06 was connected through the app. 
 
