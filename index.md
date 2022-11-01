@@ -1,10 +1,16 @@
 ﻿# Omni-Directional Robot
-Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The project I decided to pick is the Omni-Directional Robot, which can essentially go in any given direction. The base project required me to control the robot using a PS2 controller. However, on top of that, I decided to make the robot voice controlled. Below outlines each milestone I achieved along with a demo video.
+Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The project I decided to pick is the Omni-Directional Robot, which can essentially go in any direction without having to reorient itself. The base project required me to control the robot using a PS2 controller. However, I decided to make the robot voice controlled as well. Below outlines each milestone I achieved along with a demo video.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Ryan | Monta Vista High School | Mechanical Engineering | Incoming Senior
-  
+
+# Logic Behind the Formula
+Although 
+
+# Say Hello to Robbie!
+** Take important note of the pirate flag made of spaghetti noodle. It really adds to Robbie's character!
+
 # Final Milestone
 For my final milestone, I decided to add voice control. Initially, the idea was to accomplish this over the internet using the Node MCU ESP8266. However, after re-wiring all the electrical components, and compiling the code I had on the Arduino IDE, I received a fatal error saying “avr/io.h file not found”. Upon further research, I soon learned that the ESP8266 did not contain an AVR microcontroller like the Arduino UNO, which was required for the PS2 library I had downloaded. Therefore, I had two choices. I could either rewrite my code for the PS2 controller to work with the particle photon, or I could find an alternative way to achieve voice control. Seeing that rewriting my code could take too long, I decided to do more research on Bluetooth control with an Arduino. It didn’t take long before I found a very helpful website that introduced the Bluetooth module HC-06, which could be connected to the Arduino for Bluetooth capabilities. I ended up asking the instructors to see if we had any in stock, and we did! I immediately connected the HC-06 to the Arduino and began coding for Bluetooth control. 
 
@@ -28,6 +34,9 @@ The date today is July 7th, 2022. It has been a little bit over 2 weeks since my
   
     5.) An on/off switch has been added to the omni-bot.
     
+    6.) I also finished deriving a formula that accurately calculates the required speed and direction of each motor given a direction from the PS2 controller's  
+    
+    joystick.
 [![Milestone 2](https://res.cloudinary.com/marcomontalbano/image/upload/v1658528884/video_to_markdown/images/youtube--AEiCQfl9qKQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=AEiCQfl9qKQ "Milestone 2")
 
 # First Milestone
