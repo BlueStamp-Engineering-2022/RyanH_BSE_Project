@@ -41,6 +41,7 @@ The date today is July 7th, 2022. It has been a little bit over 2 weeks since my
     6.) I also finished deriving a formula that accurately calculates the required speed and direction of each motor given a direction from the PS2 controller's  
     
     joystick.
+
 [![Milestone 2](https://res.cloudinary.com/marcomontalbano/image/upload/v1658528884/video_to_markdown/images/youtube--AEiCQfl9qKQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=AEiCQfl9qKQ "Milestone 2")
 
 # First Milestone
