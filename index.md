@@ -1,7 +1,7 @@
 ﻿# Omni-Directional Robot
 Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The project I decided to pick is the Omni-Directional Robot, which can essentially go in any direction without having to reorient itself. The base project required me to control the robot using a PS2 controller. However I also made the robot voice controlled. Below outlines each milestone I achieved along with a demo video.
 
-# [**GitHub Main Page**](https://github.com/BlueStamp-Engineering-2022/RyanH_BSE_Project/tree/main)
+[****GitHub Main Page****](https://github.com/BlueStamp-Engineering-2022/RyanH_BSE_Project/tree/main)
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
