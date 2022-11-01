@@ -10,7 +10,7 @@ Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The pr
 
 [Photos of Project](https://photos.app.goo.gl/3SrxdFMFwUQ3dkWM9)
 
-[![Project](https://lh3.googleusercontent.com/pw/AL9nZEVC1r7bYM0e8Mzxc440rotXrk1w1BvoM3LTBvbBGMGzj9kijmCA1-sXKaW8S_LtEAM7jqnRnwZDxczaIyK3RMXx28YqyivLK1PzjzW69SJVpXy_N4K0r2cEPDMKcFmhugmzY843mHi7wDgcLqCkAZpV=w672-h933-no?authuser=0)]
+![image](https://user-images.githubusercontent.com/74223832/199320769-ae55fa42-ea99-442d-929f-66f84561a2c4.png)
 
 # Final Milestone
 For my final milestone, I decided to add voice control. Initially, the idea was to accomplish this over the internet using the Node MCU ESP8266. However, after re-wiring all the electrical components, and compiling the code I had on the Arduino IDE, I received a fatal error saying “avr/io.h file not found”. Upon further research, I soon learned that the ESP8266 did not contain an AVR microcontroller like the Arduino UNO, which was required for the PS2 library I had downloaded. Therefore, I had two choices. I could either rewrite my code for the PS2 controller to work with the particle photon, or I could find an alternative way to achieve voice control. Seeing that rewriting my code could take too long, I decided to do more research on Bluetooth control with an Arduino. It didn’t take long before I found a very helpful website that introduced the Bluetooth module HC-06, which could be connected to the Arduino for Bluetooth capabilities. I ended up asking the instructors to see if we had any in stock, and we did! I immediately connected the HC-06 to the Arduino and began coding for Bluetooth control. 
