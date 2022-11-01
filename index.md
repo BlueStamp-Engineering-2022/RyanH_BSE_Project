@@ -1,7 +1,7 @@
 ﻿# Omni-Directional Robot
 Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The project I decided to pick is the Omni-Directional Robot, which can essentially go in any direction without having to reorient itself. The base project required me to control the robot using a PS2 controller. However I also made the robot voice controlled. Below outlines each milestone I achieved along with a demo video.
 
-[****GitHub Main Page****](https://github.com/BlueStamp-Engineering-2022/RyanH_BSE_Project/tree/main)
+[**GitHub Main Page**](https://github.com/BlueStamp-Engineering-2022/RyanH_BSE_Project/tree/main)
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -30,7 +30,7 @@ For my final milestone, I decided to add voice control. Initially, the idea was 
 
 To do this, I first created an app through MIT app inventor. Using its built-in Bluetooth component, I was able to connect my phone to the HC-06 through the app. From there, I used block code to take in vocal commands from the user and made sure that only valid commands were accepted. If an invalid command was said, the app will tell the user to “provide a valid command”. To assist the user, I also added a page within the app that consisted of all the basic commands. Therefore, they could access these commands at any time if they were unsure about what the valid commands were. 
 
-**To access screenshots of the app, navigate to the GitHub main page and click on the pdf called "Layout Application"** 
+****To access screenshots of the app, navigate to the GitHub main page and click on the pdf called "Layout Application"****
 
 In order to have the omni-bot respond to the vocal commands, I had the app send a character, based on the command provided, to the HC-06. After that, the HC-06 would then send this information to the Arduino, which held the code I had written. Within the code, I had booleans for each direction (forward, backwards, left, right, turn right, turn left, and stop). When a certain character is received, using if-else statements, I was able to set the corresponding boolean to true. Then, based on that decision, the motors would move accordingly. After testing the voice control, I realized it was hard to stop the robot in a short amount of time. This caused a lot of problems as it made it nearly impossible to evade obstacles in time. To fix this, I added a “stop” button to the app. This allowed for quick stops when necessary. In addition, to those modifications, I also decided to take away control from the PS2 controller while the HC-06 was connected through the app. 
 
