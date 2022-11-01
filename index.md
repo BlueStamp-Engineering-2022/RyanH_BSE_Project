@@ -11,49 +11,57 @@ Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The pr
 
     1.) I added a tray to the top of the robot along with a rubber band barrier.
  
-    2.) App also supports arrow/rotational control. Additional details are 
-        found on the pdf called "Application Layout" -- Located on Github.
+    2.) App also supports arrow/rotational control. If you want to know more, 
+        navigate to the GitHub main page and click on the pdf called "Application Layout".
+        [**GitHub Main Page**](
 
 
 ![Project Image](https://lh3.googleusercontent.com/OTDZB_fRbJauujnu-WCWGBnh68xhCh3yK_IIQ2RLxm3OuFnp-NtxN7NV8xpYM68l3zfZxrPyPTi9qgjOuEeBDCfNuW9lkevW1aViOrRdyOd0khJoxAZGgizDsQwP8VO2sqmetw5LU-5-GMH4mdnk7aNdwUENzH9g7dXRPH2s2RE3KtppfX9-6APqr_fQLwXQiGH-LkXxwk8_3aItmG7DgcOUzZkM_oj00skPp8Ddp6J-K-sCRqMVdhQBMXbfHFYcC2hAz3cFfmOXEqXjo8rVUkVVnCRTTviLPZkrGLEP5F786OhnWylgUhu0vcjvDjRS0pIhGpSzmgvRTYAf__ekQeKBHxwlZ1F0RKFWxFKAFc-Pb1ZqCDieJML64qFFNOFQbDt7zs2ElQQcnIqaQKaLCd0jezgRbT_nJUPwy1UFi5-3Q7u4PiD23guOQYQwZKeQ5EIG-xViN9BHNDgH-nwILP5mg-I93FHhKPIE-cTvIprH0c88AIKifALQEHJR9KfXLWSp_VY-EUqHlwX0uSIx1cLxoD0XhESKR8N_AOgLkxSfhfZ6oVuz9z2S0PkaxCxzos5lrB8rHA3S16YZvbsTF1kJsKDKl7qAQjvDAz6oAwjrrLhE0fR705n6Cn2JU7fmeGE1tXGCfDSNkhlrmoqZo0ohfTTaaHSHoS1I6MGY3mJCrDakGfhzsusrOkCrMNYGfIrt_HIlPUHzmT2Dz1CnM7ztur8nqHpPctVUjfMgH81NH9p_5QqB62KIMAE5JaMaS7PdsI98-qaKbhxaOYWiZ-lgEsla3vksvAOZPlYCrIhBEdKH0Ib1TJjfvk-TrmM4HJqCZ9xWcR5z9kHwBINFEXhwTSTqO5sv_7xoaJqC4Rp-_ZeWKOGI-b7-SovS2Kb-NTg5hm77pCSPcrFS7wC_OrZzYDZ99pcSl_l3Dr62CT_pQG7D8kn-pRua2oiQGTvs18sZ1woK7NcRGBNhDqknEw=w672-h933-no?authuser=0)
 
 View More Photos of the Robot [**HERE**](https://photos.app.goo.gl/3SrxdFMFwUQ3dkWM9)
 
-# Final Milestone
+# Understanding the Formula
+Although deriving the formula to determine each motor's speed and direction was the hardest part of this project, understanding the formula is quite actually quite simple. If you are curious, you may navigate to GitHub and click on the pdf called "Understanding the Formula". 
+
+# Final Milestone: Voice Control
 For my final milestone, I decided to add voice control. Initially, the idea was to accomplish this over the internet using the Node MCU ESP8266. However, after re-wiring all the electrical components, and compiling the code I had on the Arduino IDE, I received a fatal error saying “avr/io.h file not found”. Upon further research, I soon learned that the ESP8266 did not contain an AVR microcontroller like the Arduino UNO, which was required for the PS2 library I had downloaded. Therefore, I had two choices. I could either rewrite my code for the PS2 controller to work with the particle photon, or I could find an alternative way to achieve voice control. Seeing that rewriting my code could take too long, I decided to do more research on Bluetooth control with an Arduino. It didn’t take long before I found a very helpful website that introduced the Bluetooth module HC-06, which could be connected to the Arduino for Bluetooth capabilities. I ended up asking the instructors to see if we had any in stock, and we did! I immediately connected the HC-06 to the Arduino and began coding for Bluetooth control. 
 
 To do this, I first created an app through MIT app inventor. Using its built-in Bluetooth component, I was able to connect my phone to the HC-06 through the app. From there, I used block code to take in vocal commands from the user and made sure that only valid commands were accepted. If an invalid command was said, the app will tell the user to “provide a valid command”. To assist the user, I also added a page within the app that consisted of all the basic commands. Therefore, they could access these commands at any time if they were unsure about what the valid commands were. 
 
-**SCREENSHOTS OF THE APP**
+**To access screenshots of the app, navigate to the GitHub main page and click on the pdf called "Layout Application"** 
 
 In order to have the omni-bot respond to the vocal commands, I had the app send a character, based on the command provided, to the HC-06. After that, the HC-06 would then send this information to the Arduino, which held the code I had written. Within the code, I had booleans for each direction (forward, backwards, left, right, turn right, turn left, and stop). When a certain character is received, using if-else statements, I was able to set the corresponding boolean to true. Then, based on that decision, the motors would move accordingly. After testing the voice control, I realized it was hard to stop the robot in a short amount of time. This caused a lot of problems as it made it nearly impossible to evade obstacles in time. To fix this, I added a “stop” button to the app. This allowed for quick stops when necessary. In addition, to those modifications, I also decided to take away control from the PS2 controller while the HC-06 was connected through the app. 
 
 [![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1658525335/video_to_markdown/images/youtube--Z5iSiJXumOA-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=Z5iSiJXumOA "Milestone 3")
 
-# Logic Behind the Formula
-Although deriving the formula was one of the harder tasks of this project, understanding how the formula works is actually quite simple. 
-
-# Second Milestone
+# Second Milestone: Base Project Completed
 The date today is July 7th, 2022. It has been a little bit over 2 weeks since my last milestone and I have accomplished a lot since then. Here’s a brief rundown of what I currently have: 
 
-    1.) I have finished most of the mechanical construction of the robot. All motors, wheels, and metal reinforcements have been mounted and secured. The only thing       
-    left is the wooden tray which will be placed above the bottom plate. 
+    1.) I have finished most of the mechanical construction of the robot. 
+        All motors, wheels, and metal reinforcements have been mounted and 
+        secured. The only thing left is the wooden tray which will be 
+        placed above the bottom plate. 
   
-    2.) I have laid out all the electrical components onto the robot. The configuration of the electrical components will remain mostly the same from here on out.
+    2.) I have laid out all the electrical components onto the robot. The 
+        configuration of the electrical components will remain mostly the 
+        same from here on out.
  
-    3.) The code is currently complete for the PS2 controller. Both joysticks and all keypad buttons are operational and dictate how the omni-bot moves. 
+    3.) The code is currently complete for the PS2 controller. Both joysticks 
+        and all keypad buttons are operational and dictate how the omni-bot moves. 
  
-    4.) Jittering issues, random deviations, and unwanted rotations have been fixed. The robot can now move in all directions with relatively low rotation. 
+    4.) Jittering issues, random deviations, and unwanted rotations have been 
+        fixed. The robot can now move in all directions with relatively low rotation. 
   
     5.) An on/off switch has been added to the omni-bot.
     
-    6.) I also finished deriving a formula that accurately calculates the required speed and direction of each motor given a direction from the PS2 controller's  
-    
-    joystick.
+    6.) Do to the robot's fixed wheel design, I had to use some vector math 
+        and trigonometry to derive a formula capable of accurately calculating each 
+        motor's speed and direction. The formula utilizes the direction (in the form 
+        of x and y coordinates) from the PS2 controller's joystick.
 
 [![Milestone 2](https://res.cloudinary.com/marcomontalbano/image/upload/v1658528884/video_to_markdown/images/youtube--AEiCQfl9qKQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=AEiCQfl9qKQ "Milestone 2")
 
-# First Milestone
+# First Milestone: Working Electrical Components 
   
 
 It has been 6 days since I started on the Omni-directional robot, and I’ve managed to successfully pair the PS2 remote with the wireless adapter and get all of the electrical components working, As of right now, only the PS2 controller’s forward-backward keypad buttons are operational. Pressing the “forward” keypad button allows all three VEX motors to rotate in a clockwise fashion while pressing the “backward” keypad button allows all three VEX motors to rotate in a counter-clockwise fashion. 
