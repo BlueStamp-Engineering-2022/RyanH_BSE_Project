@@ -8,10 +8,10 @@ Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The pr
 # Say Hello to Robbie!
 Additional Details: 
 
-1.) I added a tray to the top of the robot along with a rubber band barrier. 
+1.)   I added a tray to the top of the robot along with a rubber band barrier. 
 
-2.) App also supports arrow/rotational control. Additional details are 
-    found on the pdf named "Application Layout" -- Located on Github.
+2.)   App also supports arrow/rotational control. Additional details are 
+      found on the pdf called "Application Layout" -- Located on Github.
 
 ![Project Image](https://lh3.googleusercontent.com/OTDZB_fRbJauujnu-WCWGBnh68xhCh3yK_IIQ2RLxm3OuFnp-NtxN7NV8xpYM68l3zfZxrPyPTi9qgjOuEeBDCfNuW9lkevW1aViOrRdyOd0khJoxAZGgizDsQwP8VO2sqmetw5LU-5-GMH4mdnk7aNdwUENzH9g7dXRPH2s2RE3KtppfX9-6APqr_fQLwXQiGH-LkXxwk8_3aItmG7DgcOUzZkM_oj00skPp8Ddp6J-K-sCRqMVdhQBMXbfHFYcC2hAz3cFfmOXEqXjo8rVUkVVnCRTTviLPZkrGLEP5F786OhnWylgUhu0vcjvDjRS0pIhGpSzmgvRTYAf__ekQeKBHxwlZ1F0RKFWxFKAFc-Pb1ZqCDieJML64qFFNOFQbDt7zs2ElQQcnIqaQKaLCd0jezgRbT_nJUPwy1UFi5-3Q7u4PiD23guOQYQwZKeQ5EIG-xViN9BHNDgH-nwILP5mg-I93FHhKPIE-cTvIprH0c88AIKifALQEHJR9KfXLWSp_VY-EUqHlwX0uSIx1cLxoD0XhESKR8N_AOgLkxSfhfZ6oVuz9z2S0PkaxCxzos5lrB8rHA3S16YZvbsTF1kJsKDKl7qAQjvDAz6oAwjrrLhE0fR705n6Cn2JU7fmeGE1tXGCfDSNkhlrmoqZo0ohfTTaaHSHoS1I6MGY3mJCrDakGfhzsusrOkCrMNYGfIrt_HIlPUHzmT2Dz1CnM7ztur8nqHpPctVUjfMgH81NH9p_5QqB62KIMAE5JaMaS7PdsI98-qaKbhxaOYWiZ-lgEsla3vksvAOZPlYCrIhBEdKH0Ib1TJjfvk-TrmM4HJqCZ9xWcR5z9kHwBINFEXhwTSTqO5sv_7xoaJqC4Rp-_ZeWKOGI-b7-SovS2Kb-NTg5hm77pCSPcrFS7wC_OrZzYDZ99pcSl_l3Dr62CT_pQG7D8kn-pRua2oiQGTvs18sZ1woK7NcRGBNhDqknEw=w672-h933-no?authuser=0)
 
