@@ -7,7 +7,7 @@ Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The pr
 |:--:|:--:|:--:|:--:|
 | Ryan | Monta Vista High School | Mechanical Engineering | Incoming Senior
 
-# Say Hello to Robbie!
+# Say Hello to the Robot!
 
 **ADDITIONAL DETAILS**
 
