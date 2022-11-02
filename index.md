@@ -14,7 +14,7 @@ Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The pr
     1.) I added a tray to the top of the robot along with a rubber band barrier.
  
     2.) App also supports arrow/rotational control. If you want to know more, 
-        navigate to the [GitHub Main Page](https://github.com/BlueStamp-Engineering-2022/RyanH_BSE_Project/tree/main) and click on 
+        navigate to the Github main page (link at the top of the website) and click on 
         the pdf called "Application Layout".
 
 
