@@ -58,10 +58,10 @@ The date today is July 7th, 2022. It has been a little bit over 2 weeks since my
   
     5.) An on/off switch has been added to the omni-bot.
     
-    6.) Do to the robot's fixed wheel design, I had to use some vector math 
+    6.) Due to the robot's fixed wheel design, I had to use some vector math 
         and trigonometry to derive a formula capable of accurately calculating each 
-        motor's speed and direction. The formula utilizes the direction (in the form 
-        of x and y coordinates) from the PS2 controller's joystick.
+        motor's speed and direction. The formula utilizes the direction indicated (in 
+        the form of x and y coordinates) by the PS2 controller's left joystick.
 
 [![Milestone 2](https://res.cloudinary.com/marcomontalbano/image/upload/v1658528884/video_to_markdown/images/youtube--AEiCQfl9qKQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=AEiCQfl9qKQ "Milestone 2")
 
