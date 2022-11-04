@@ -51,15 +51,15 @@ SoftwareSerial bluetooth (8,12); // Allows for serial communication (sending dat
 char command = 'h';
 char bluetoothStatus = 'p';
 
-PS2X ps2x; // create PS2 Controller Class
+PS2X ps2x; // Create PS2 Controller Class
 
-int error = 0; // holds error as an int
-byte type = 0; // variable for type of controller
-byte vibrate = 0; // variable for vibration of controller
+int error = 0; // Holds error as an int
+byte type = 0; // Variable for type of controller
+byte vibrate = 0; // Variable for vibration of controller
 
 void setup() 
 {
-  // sets the pin mode of each pin on the Arduino (input or output pin)
+  // Sets the pin mode of each pin on the Arduino (input or output pin)
   pinMode(motor1pin1, OUTPUT);
   pinMode(motor1pin2, OUTPUT);
   pinMode(motor2pin1, OUTPUT);
@@ -71,11 +71,12 @@ void setup()
   pinMode(motor2EN, OUTPUT);
   pinMode(motor3EN, OUTPUT);
 
- // sets serial communication at 9600 bits/sec
+ // Sets serial communication at 9600 bits/sec
  Serial.begin(9600);
  bluetooth.begin(9600);
   
- error = ps2x.config_gamepad(A3,A1,A2,A0, false, true);   //setup pins and settings:  GamePad(clock, command, attention, data, Pressures?, Rumble?) check for error 
+ error = ps2x.config_gamepad(A3,A1,A2,A0, false, true);   // Setup pins and settings:  GamePad(clock, command, attention, data, Pressures?, Rumble?) 
+                                                          // Checks for error.
      
  // Check for error    
     
@@ -332,11 +333,12 @@ void loop()
    else
       greenLight = true;
    
-    float L = (sqrt( ( (float) lJoyY * (float) lJoyY) + ((float) lJoyX * (float) lJoyX) )); // magnitude of the left joystick components (hypotenuse of right triangle)
-    L = L*0.66666666666; // magnitude is multiplied by constant to account for third vector
-    float radian = (atan2((float) lJoyY, (float) lJoyX)); // angle formed by left joystick input
+    float L = (sqrt( ( (float) lJoyY * (float) lJoyY) + ((float) lJoyX * (float) lJoyX) )); // magnitude of the left joystick components
+                                                                                            // (hypotenuse of right triangle)
+    L = L*0.66666666666; // Magnitude is multiplied by constant (decreases motor speed -- more controllable -- less unwanted rotation)
+    float radian = (atan2((float) lJoyY, (float) lJoyX)); // Angle formed by left joystick input (angle of direction)
 
-    // formula for each motor's speed depending on direction and magnitude given by left joystick
+    // Formula for each motor's speed depending on direction and magnitude given by left joystick
     motor1Speed = (int) (L * cos( (60*(M_PI/180)) - radian )); 
     motor2Speed = (int) (L * cos( (300*(M_PI/180)) - radian ));
     motor3Speed = (int) (L * cos( (180*(M_PI/180)) - radian ));
