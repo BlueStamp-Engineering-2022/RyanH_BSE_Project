@@ -2,7 +2,7 @@
 #include <PS2X_lib.h>  
 #include <HampelFilter.h>
 
-// field variables for each motor pin and EN pin
+// Field variables for each motor pin and EN pin
 int motor1pin1 = 2;
 int motor1pin2 = 4;
 int motor1EN = 3;
@@ -15,18 +15,18 @@ int motor3pin1 = 9;
 int motor3pin2 = 10;
 int motor3EN = 11;
 
-int motorSpeed = 0; // holds the motor speed for rotational direction
-double lJoyXD = 0.0; // holds the x-coordinate of the left joystick input
-double lJoyYD = 0.0; // holds the y-coordinate of the right joystick input
-int motor1Speed = 0; // holds the speed of motor 1
-int motor2Speed = 0; // holds the speed of motor 2
-int motor3Speed = 0; // holds the speed of motor 3
+int motorSpeed = 0; // Holds the motor speed for rotational direction
+double lJoyXD = 0.0; // Holds the x-coordinate of the left joystick input
+double lJoyYD = 0.0; // Holds the y-coordinate of the right joystick input
+int motor1Speed = 0; // Holds the speed of motor 1
+int motor2Speed = 0; // Holds the speed of motor 2
+int motor3Speed = 0; // Holds the speed of motor 3
 
-boolean greenLight = false; // becomes true when joystick values are not outliers (allows for commencement of main code)
-boolean bluetoothMode = false; // used to toggle bluetooth mode (renders ps2 controller useless when bluetooth is connected)
-boolean arrowRotation = false; // used to determine when voice control isn't used
+boolean greenLight = false; // Becomes true when joystick values are not outliers (allows for commencement of main code)
+boolean bluetoothMode = false; // Used to toggle bluetooth mode (renders ps2 controller useless when bluetooth is connected)
+boolean arrowRotation = false; // Used to determine when voice control isn't used
 
-// booleans for each direction 
+// Booleans for each direction 
 boolean forward = false;
 boolean backwards = false;
 boolean moveRight = false;
@@ -34,8 +34,8 @@ boolean moveLeft = false;
 boolean rRight = false;
 boolean rLeft = false;
 boolean stopped = false; 
-boolean stoppedRRight = false; // boolean for whether to stop rotating to the right
-boolean stoppedRLeft = false; // boolean for whether to stop rotating to the left
+boolean stoppedRRight = false; // Boolean for whether to stop rotating to the right
+boolean stoppedRLeft = false; // Boolean for whether to stop rotating to the left
 
 // Hampelfilter object initialized.
 // Values: HampelFilter( <default value>, <window size (range)>, <threshold for outlier detection (sensitivity)> )
@@ -51,15 +51,15 @@ SoftwareSerial bluetooth (8,12); // Allows for serial communication (sending dat
 char command = 'h';
 char bluetoothStatus = 'p';
 
-PS2X ps2x; // create PS2 Controller Class
+PS2X ps2x; // Create PS2 Controller Class
 
-int error = 0; // holds error as an int
-byte type = 0; // variable for type of controller
-byte vibrate = 0; // variable for vibration of controller
+int error = 0; // Holds error as an int
+byte type = 0; // Variable for type of controller
+byte vibrate = 0; // Variable for vibration of controller
 
 void setup() 
 {
-  // sets the pin mode of each pin on the Arduino (input or output pin)
+  // Sets the pin mode of each pin on the Arduino (input or output pin)
   pinMode(motor1pin1, OUTPUT);
   pinMode(motor1pin2, OUTPUT);
   pinMode(motor2pin1, OUTPUT);
@@ -71,11 +71,12 @@ void setup()
   pinMode(motor2EN, OUTPUT);
   pinMode(motor3EN, OUTPUT);
 
- // sets serial communication at 9600 bits/sec
+ // Sets serial communication at 9600 bits/sec
  Serial.begin(9600);
  bluetooth.begin(9600);
   
- error = ps2x.config_gamepad(A3,A1,A2,A0, false, true);   //setup pins and settings:  GamePad(clock, command, attention, data, Pressures?, Rumble?) check for error 
+ error = ps2x.config_gamepad(A3,A1,A2,A0, false, true);   // Setup pins and settings:  GamePad(clock, command, attention, data, Pressures?, Rumble?) 
+                                                          // Checks for error.
      
  // Check for error    
     
@@ -106,9 +107,9 @@ void setup()
 
 void loop() 
 {
-  error = ps2x.config_gamepad(A3,A1,A2,A0, false, true); // continues to check if controller is connected or not
+  error = ps2x.config_gamepad(A3,A1,A2,A0, false, true); // Continues to check if controller is connected or not
 
-  // if no controller is found, stop all motors and return to setup()
+  // If no controller is found, stop all motors and return to setup()
   if (error == 1)
   {
     analogWrite(motor1EN, 0);
@@ -118,12 +119,12 @@ void loop()
   }
   else 
   {
-    ps2x.read_gamepad(false, vibrate); // controller will not vibrate
+    ps2x.read_gamepad(false, vibrate); // Controller will not vibrate
 
     // Checks if bluetooth is available
     if (bluetooth.available())
     {
-       command = bluetooth.read(); // reads the information received via bluetooth
+       command = bluetooth.read(); // Reads the information received via bluetooth
 
       // Depending on commands, bluetoothMode is set to true or false
       // Determines whether to take control away from ps2 controller or not
@@ -332,11 +333,12 @@ void loop()
    else
       greenLight = true;
    
-    float L = (sqrt( ( (float) lJoyY * (float) lJoyY) + ((float) lJoyX * (float) lJoyX) )); // magnitude of the left joystick components (hypotenuse of right triangle)
-    L = L*0.66666666666; // magnitude is multiplied by constant to account for third vector
-    float radian = (atan2((float) lJoyY, (float) lJoyX)); // angle formed by left joystick input
+    float L = (sqrt( ( (float) lJoyY * (float) lJoyY) + ((float) lJoyX * (float) lJoyX) )); // magnitude of the left joystick components
+                                                                                            // (hypotenuse of right triangle)
+    L = L*0.66666666666; // Magnitude is multiplied by constant (decreases motor speed -- more controllable -- less unwanted rotation)
+    float radian = (atan2((float) lJoyY, (float) lJoyX)); // Angle formed by left joystick input (angle of direction)
 
-    // formula for each motor's speed depending on direction and magnitude given by left joystick
+    // Formula for each motor's speed depending on direction and magnitude given by left joystick
     motor1Speed = (int) (L * cos( (60*(M_PI/180)) - radian )); 
     motor2Speed = (int) (L * cos( (300*(M_PI/180)) - radian ));
     motor3Speed = (int) (L * cos( (180*(M_PI/180)) - radian ));
@@ -698,6 +700,6 @@ void loop()
       }
     } 
     
-    delay(100); // delay set at 100 milliseconds (reads input every 100 milliseconds)
+    delay(100); // Delay set at 100 milliseconds (reads input every 100 milliseconds)
    }
 }
