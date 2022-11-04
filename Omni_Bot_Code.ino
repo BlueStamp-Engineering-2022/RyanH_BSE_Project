@@ -2,7 +2,7 @@
 #include <PS2X_lib.h>  
 #include <HampelFilter.h>
 
-// field variables for each motor pin and EN pin
+// Field variables for each motor pin and EN pin
 int motor1pin1 = 2;
 int motor1pin2 = 4;
 int motor1EN = 3;
@@ -15,18 +15,18 @@ int motor3pin1 = 9;
 int motor3pin2 = 10;
 int motor3EN = 11;
 
-int motorSpeed = 0; // holds the motor speed for rotational direction
-double lJoyXD = 0.0; // holds the x-coordinate of the left joystick input
-double lJoyYD = 0.0; // holds the y-coordinate of the right joystick input
-int motor1Speed = 0; // holds the speed of motor 1
-int motor2Speed = 0; // holds the speed of motor 2
-int motor3Speed = 0; // holds the speed of motor 3
+int motorSpeed = 0; // Holds the motor speed for rotational direction
+double lJoyXD = 0.0; // Holds the x-coordinate of the left joystick input
+double lJoyYD = 0.0; // Holds the y-coordinate of the right joystick input
+int motor1Speed = 0; // Holds the speed of motor 1
+int motor2Speed = 0; // Holds the speed of motor 2
+int motor3Speed = 0; // Holds the speed of motor 3
 
-boolean greenLight = false; // becomes true when joystick values are not outliers (allows for commencement of main code)
-boolean bluetoothMode = false; // used to toggle bluetooth mode (renders ps2 controller useless when bluetooth is connected)
-boolean arrowRotation = false; // used to determine when voice control isn't used
+boolean greenLight = false; // Becomes true when joystick values are not outliers (allows for commencement of main code)
+boolean bluetoothMode = false; // Used to toggle bluetooth mode (renders ps2 controller useless when bluetooth is connected)
+boolean arrowRotation = false; // Used to determine when voice control isn't used
 
-// booleans for each direction 
+// Booleans for each direction 
 boolean forward = false;
 boolean backwards = false;
 boolean moveRight = false;
@@ -34,8 +34,8 @@ boolean moveLeft = false;
 boolean rRight = false;
 boolean rLeft = false;
 boolean stopped = false; 
-boolean stoppedRRight = false; // boolean for whether to stop rotating to the right
-boolean stoppedRLeft = false; // boolean for whether to stop rotating to the left
+boolean stoppedRRight = false; // Boolean for whether to stop rotating to the right
+boolean stoppedRLeft = false; // Boolean for whether to stop rotating to the left
 
 // Hampelfilter object initialized.
 // Values: HampelFilter( <default value>, <window size (range)>, <threshold for outlier detection (sensitivity)> )
@@ -107,9 +107,9 @@ void setup()
 
 void loop() 
 {
-  error = ps2x.config_gamepad(A3,A1,A2,A0, false, true); // continues to check if controller is connected or not
+  error = ps2x.config_gamepad(A3,A1,A2,A0, false, true); // Continues to check if controller is connected or not
 
-  // if no controller is found, stop all motors and return to setup()
+  // If no controller is found, stop all motors and return to setup()
   if (error == 1)
   {
     analogWrite(motor1EN, 0);
@@ -119,12 +119,12 @@ void loop()
   }
   else 
   {
-    ps2x.read_gamepad(false, vibrate); // controller will not vibrate
+    ps2x.read_gamepad(false, vibrate); // Controller will not vibrate
 
     // Checks if bluetooth is available
     if (bluetooth.available())
     {
-       command = bluetooth.read(); // reads the information received via bluetooth
+       command = bluetooth.read(); // Reads the information received via bluetooth
 
       // Depending on commands, bluetoothMode is set to true or false
       // Determines whether to take control away from ps2 controller or not
@@ -700,6 +700,6 @@ void loop()
       }
     } 
     
-    delay(100); // delay set at 100 milliseconds (reads input every 100 milliseconds)
+    delay(100); // Delay set at 100 milliseconds (reads input every 100 milliseconds)
    }
 }
