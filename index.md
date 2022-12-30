@@ -17,7 +17,7 @@ Hi, my name is Ryan, and I am a rising senior at Monta Vista High School. The pr
         navigate to the Github main page (link at the top of the website) and click on 
         the pdf called "Application Layout."
 
-View Photos of the Robot [**HERE**](https://photos.app.goo.gl/3SrxdFMFwUQ3dkWM9)
+**View Photos of the Robot** [**HERE**](https://photos.app.goo.gl/3SrxdFMFwUQ3dkWM9)
 
 # Understanding the Formula
 If you are curious about how the "Motor Speed and Direction" formula was derived, you may navigate to the [GitHub Main Page](https://github.com/BlueStamp-Engineering-2022/RyanH_BSE_Project/tree/main) and click on the pdf called "Understanding the Formula". 
