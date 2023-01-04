@@ -32,6 +32,10 @@ To do this, I first created an app through MIT app inventor. Using its built-in 
 
 In order to have the omni-bot respond to the vocal commands, I had the app send a character, based on the command provided, to the HC-06. After that, the HC-06 would then send this information to the Arduino, which held the code I had written. Within the code, I had booleans for each direction (forward, backwards, left, right, turn right, turn left, and stop). When a certain character is received, using if-else statements, I was able to set the corresponding boolean to true. Then, based on that decision, the motors would move accordingly. After testing the voice control, I realized it was hard to stop the robot in a short amount of time. This caused a lot of problems as it made it nearly impossible to evade obstacles in time. To fix this, I added a “stop” button to the app. This allowed for quick stops when necessary. In addition, to those modifications, I also decided to take away control from the PS2 controller while the HC-06 was connected through the app. 
 
+**UPDATE**
+
+On top of voice control I have also added an option for "Lateral and Rotational Controls" in the existing app. Details can be found on the pdf called "Application Layout" (link above).
+
 [![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1658525335/video_to_markdown/images/youtube--Z5iSiJXumOA-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=Z5iSiJXumOA "Milestone 3")
 
 
